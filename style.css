@@ -37,10 +37,12 @@ ul {
   margin: 0;
   padding: 0px;
 }
-li, h3 {
+li, 
+h3 {
   list-style: none;
 }
-input,button {
+input,
+button {
   outline: none;
 }
 button {
@@ -140,8 +142,8 @@ ul li input[type="text"] {
 }
 
 .edit-mode input[type="text"] {
-  display:inline-block;
-  width:204px;
+  display: inline-block;
+  width: 204px;
 }
 
 .edit-mode label {
