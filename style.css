@@ -13,7 +13,7 @@ body {
 .wrapper-more-inf img {
   width: 100%;
 }
-.wrapper-more-inf .more-inf {
+.more-inf {
   font-family: fantasy, cursive;
 }
 
@@ -84,8 +84,8 @@ label[for="new-task"] {
   display: block;
   margin: 0 0 20px;
 }
-input #new-task {
-  width: 318px;
+#new-task {
+  width: 300px;
 }
 p > button:hover {
   color: #0fc57c;
@@ -116,12 +116,12 @@ li > input[type="text"] {
 li > button .delete:hover {
   color: #cf2323;
 }
-button.delete img {
+.delete img {
   height: 2em;
   transform: rotateZ(45deg);
   transition: transform 200ms ease-in;
 }
-button.delete img:hover {
+.delete img:hover {
   transform: rotateZ(0);
 }
 
@@ -136,11 +136,11 @@ ul li input[type="text"] {
   display:none
 }
 
-ul li.edit-mode input[type="text"] {
+.edit-mode input[type="text"] {
   display:inline-block;
   width:204px;
 }
 
-ul li.edit-mode label {
+.edit-mode label {
   display:none;
 }
