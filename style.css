@@ -10,11 +10,11 @@ body {
   display: block;
   text-align: right;
 }
-.more-inf img {
+.more-inf__img {
   width: 100%;
 }
 .more-inf__link {
-  font-family: fantasy, cursive;
+  font-family: cursive;
 }
 
 @media (max-width:768px) {
@@ -59,7 +59,7 @@ button:hover {
 }
 /* Heading */
 h3,
-label[for="new-task"] {
+.adding-task__label {
   color: #333;
   font-weight: 700;
   font-size: 15px;
@@ -67,8 +67,9 @@ label[for="new-task"] {
   padding: 30px 0 10px;
   margin: 0;
   text-transform: uppercase;
+  width: 100%;
 }
-input[type="text"] {
+.input_text {
   margin: 0;
   font-size: 18px;
   line-height: 18px;
@@ -80,21 +81,10 @@ input[type="text"] {
   font-family: Lato, sans-serif;
   color: #888;
 }
-input[type="text"]:focus {
+.input_text:focus {
   color: #333;
 }
 
-/* New Task */
-label[for="new-task"] {
-  display: block;
-  margin: 0 0 20px;
-}
-#new-task {
-  width: 300px;
-}
-p > button:hover {
-  color: #0fc57c;
-}
 
 /* Task list */
 li {
@@ -106,19 +96,19 @@ li > * {
   vertical-align: middle;
 }
 
-li > input[type="checkbox"] {
+.input_checkbox {
   margin: 0 10px;
 }
-li > label {
+label {
   padding-left: 10px;
   box-sizing: border-box;
   font-size: 18px;
   width: 226px;
 }
-li > input[type="text"] {
+.input_text{
   width: 226px;
 }
-li > button .delete:hover {
+.delete:hover {
   color: #cf2323;
 }
 .delete img {
@@ -137,15 +127,25 @@ li > button .delete:hover {
 }
 
 /* Edit Task */
-ul li input[type="text"] {
+.input_text {
   display: none;
 }
 
-.edit-mode input[type="text"] {
+.edit-mode .input_text {
   display: inline-block;
   width: 204px;
 }
 
 .edit-mode label {
   display: none;
+}
+
+/* New Task */
+.adding-task__label {
+  display: block;
+  margin: 0 0 20px;
+}
+.adding-task__input{
+  display: inline;
+  width: 300px;
 }
